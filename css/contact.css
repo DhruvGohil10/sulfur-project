@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+	font-family: blacksword;
+	src: url(Blacksword.otf);
+}
+
+.top {
+	width: 73%;
+	margin: 0 auto;
+	height: 2.3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0 0 2rem;
+	border: 1px solid rgb(226, 226, 226);
+}
+
+.top-left {
+	display: flex;
+	gap: 2rem;
+	color: rgb(170, 170, 170);
+	font-size: .9rem;
+}
+
+.top-left div a {
+	color: rgb(170, 170, 170);
+}
+
+.top-right {
+	display: flex;
+	align-items: center;
+}
+
+.top-icon-box {
+	width: 3rem;
+	height: 2.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgb(226, 226, 226);
+}
+
+.top-icon-box > i {
+	font-size: 1rem;
+	color: rgb(190, 190, 190);
+}
+
+.top-icon-box:hover .top-icon {
+	color: #ff432e;
+}
+
+/* navbar -------------------------------------------------------------------- */
+.navbar {
+	width: 80%;
+	height: 4.5rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	color: #ff432e;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 3rem;
+}
+
+.navlinks {
+	display: flex;
+}
+
+.navlinkbox {
+	height: 4.5rem;
+	width: 6rem;
+	/* background-color: #FF432E; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navlinkbox:hover {
+	background-color: #ff432e;
+}
+
+.navlinkbox:hover .navlink-a {
+	color: white;
+}
+
+.navlinks div a {
+	text-decoration: none;
+	font-size: 1.1rem;
+	color: rgb(58, 58, 58);
+}
+
+.currentbox {
+	background-color: #ff432e;
+}
+
+.current-a {
+	color: white !important;
+}
+
+
+.first{
+   width: 100vw;
+   height: 9rem;
+   background-image: url('../images/banner.jpg');
+   color: white;
+   font-size: 2rem;
+   line-height: 10rem;
+   padding-left:12rem;
+   margin-top: 2rem;
+	font-weight: 500;
+}
+/* form ---------------------------------------------- */
+.form-tittle{
+   text-align: center;
+   font-weight: 500;
+   font-size: 3rem;
+   margin: 5rem 0 0 0;
+}
+
+.form-subtittle{
+   text-align: center;
+   font-size: 1.2rem;
+   margin: 0;
+}
+
+.form{
+   width: 73%;
+   margin: 3rem auto 0 auto;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   gap: 3.2rem;
+}
+
+.left{
+   width: 60%;
+   
+}
+
+.right{
+   width: 40%;
+}
+
+.left input{
+   display: block;
+   width: 100%;
+   margin: 1.4rem 0;
+   height: 3.31rem;
+   padding-left: 1.4rem;
+   border: 2px solid black;
+}
+
+.textarea{
+   width: 100%;
+   margin-top: 1.4rem;
+   border: 2px solid black;
+   padding: 1rem 0 0 1rem;
+   box-sizing: border-box;
+}
+
+.submit{
+   display: block;
+   width: 10rem;
+   margin: 1.8rem auto 0 auto;
+   height: 2.7rem;
+   background-color: #ff432e;
+   color: white;
+   letter-spacing: 2px;
+   font-size: 1rem;
+   outline: none;
+   border: none;
+   border-radius: 4px;
+}
+.submit:hover{
+   background-color: white;
+   color: #ff432e;
+   border: 2px solid #ff432e;
+}
+
+/* map ----------------------------------------- */
+.map{
+	width: 100vw;
+	height: 20rem;
+	margin: 4rem 0;
+}
+
+/* footer ------------------------------------------ */
+.footer{
+	width: 100%;
+	height: 22rem;
+	background-color: #222222;
+	display: flex;
+	padding: 2rem 2rem 0 2rem;
+	color: rgb(145, 144, 144);
+}
+
+.column{
+	width: 25%;
+}
+
+.footer-tittle{
+	color: rgb(179, 179, 179);
+}
+
+.col2-box{
+	/* position: relative; */
+	height: 10rem;
+	padding: 0 1.5rem 0 0;
+	display: flex;
+	
+}
+
+.col2-text{
+	transform: translateY(-11px);
+	width: 80%;
+}
+
+.col2-box i{
+	margin-right: 1.5rem;
+	font-size: 3rem;
+}
+
+.red{
+	color: #FF432E
+}
+
+.col3 input{
+	width: 14rem;
+	height: 2rem;
+}
+
+.col3 button{
+	width: 6.9rem;
+	height: 2.4rem;
+	border: none;
+	outline: none;
+	background-color: #FF432E;
+	color: white;
+	letter-spacing: 2px;
+	border-radius: 2px;
+}
+
+.col4-box img{
+	width: 5rem;
+}
+/* footer 2 ------------------------------------------- */
+.footer2{
+	width: 100%;
+	height: 5rem;
+	background-color: #1D1D1D;
+	display: flex;
+	color: gray;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer2 p{
+	padding-left: 3rem;
+}
+
+.footer2 div{
+	padding-right: 5rem;
+}
+
+.footer2 div a{
+	text-decoration: none;
+	color: rgb(196, 196, 196);
+	margin: 0 1rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	.top {
+		flex-direction: column;
+		height: 8rem;
+		padding-top: 1rem;
+	}
+
+	.top-left {
+		flex-direction: column;
+	}
+
+	.navbar {
+		flex-direction: column;
+		height: 35rem;
+	}
+
+	.navlinks {
+		flex-direction: column;
+		/* flex-wrap: wrap; */
+	}
+
+	.first{
+		padding-left: 0rem
+	}
+
+	.form{
+		width: 97%;
+		flex-direction: column;
+		gap: .2rem;
+	}
+	
+	.left{
+		width:90%;
+		
+	}
+	
+	.right{
+		width: 100%;
+	}
+
+	.map{
+		margin: 1rem 0;
+	}
+
+   .footer{
+		width: 100%;
+		height: 60rem;
+		padding: 2rem 2rem 0 2rem;
+		display: flex;
+		flex-direction: column;
+		margin-top: 2rem;
+	}
+	
+	.column{
+		width: 100%;
+	}
+
+	.footer2{
+		flex-direction: column;
+		height: 10rem;
+		justify-content: center;
+		align-items: center;
+	}
+}

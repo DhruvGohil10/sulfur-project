@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+	font-family: blacksword;
+	src: url(Blacksword.otf);
+}
+
+.top {
+	width: 73%;
+	margin: 0 auto;
+	height: 2.3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0 0 2rem;
+	border: 1px solid rgb(226, 226, 226);
+}
+
+.top-left {
+	display: flex;
+	gap: 2rem;
+	color: rgb(170, 170, 170);
+	font-size: .9rem;
+}
+
+.top-left div a {
+	color: rgb(170, 170, 170);
+}
+
+.top-right {
+	display: flex;
+	align-items: center;
+}
+
+.top-icon-box {
+	width: 3rem;
+	height: 2.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgb(226, 226, 226);
+}
+
+.top-icon-box > i {
+	font-size: 1rem;
+	color: rgb(190, 190, 190);
+}
+
+.top-icon-box:hover .top-icon {
+	color: #ff432e;
+}
+
+/* navbar -------------------------------------------------------------------- */
+.navbar {
+	width: 80%;
+	height: 4.5rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	color: #ff432e;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 3rem;
+}
+
+.navlinks {
+	display: flex;
+}
+
+.navlinkbox {
+	height: 4.5rem;
+	width: 6rem;
+	/* background-color: #FF432E; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navlinkbox:hover {
+	background-color: #ff432e;
+}
+
+.navlinkbox:hover .navlink-a {
+	color: white;
+}
+
+.navlinks div a {
+	text-decoration: none;
+	font-size: 1.1rem;
+	color: rgb(58, 58, 58);
+}
+
+.currentbox {
+	background-color: #ff432e;
+}
+
+.current-a {
+	color: white !important;
+}
+
+
+.first{
+   width: 100vw;
+   height: 9rem;
+   background-image: url('../images/banner.jpg');
+   color: white;
+   font-size: 2rem;
+   line-height: 10rem;
+   padding-left:12rem;
+   margin-top: 2rem;
+	font-weight: 500;
+}
+
+/* portfolio ---------------------------- */
+.portfolio {
+	width: 100vw;
+	background-color: #F2FFFC;
+	text-align: center;
+	padding-top: 2rem;
+	margin-top: 8rem;
+}
+
+.cards2 {
+	width: 80rem;
+	margin: 0 auto;
+	margin-top: 5rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card2 {
+	width: 100%;
+	height: 20rem;
+	background-size: cover;
+	position: relative;
+}
+
+.c2-1 {
+	background-image: url('../images/img1.jpg');
+}
+.c2-2 {
+	background-image: url('../images/img2.jpg');
+}
+.c2-3 {
+	background-image: url('../images/img3.jpg');
+}
+.c2-4 {
+	background-image: url('../images/img4.jpg');
+}
+.c2-5 {
+	background-image: url('../images/img5.jpg');
+}
+.c2-6 {
+	background-image: url('../images/img6.jpg');
+}
+
+.portfolio-tittle {
+	font-size: 4rem;
+	font-weight: 400;
+}
+
+.card2cast {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 67, 46, 0.87);
+	visibility: hidden;
+}
+.card2:hover .card2cast {
+	visibility: visible;
+}
+
+.card2-tittle {
+	position: absolute;
+	/* top: .7rem; */
+	bottom: -3rem;
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+	visibility: hidden;
+	transition: bottom .15s;
+}
+.card2:hover .card2-tittle {
+	visibility: visible;
+	bottom: 13rem;
+}
+
+.card2-text {
+	position: absolute;
+	/* bottom: 8rem; */
+	bottom: -3rem;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 1.2rem;
+	transition: bottom .5s;
+	visibility: hidden;
+}
+.card2:hover .card2-text {
+	visibility: visible;
+	bottom: 7rem;
+}
+
+.card2-icons {
+	position: absolute;
+	/* bottom: 5rem; */
+	bottom: -.3rem;
+	left: 50%;
+	transform: translateX(-50%);
+	visibility: hidden;
+	transition: bottom .65s;
+}
+.card2-icons a {
+	text-decoration: none;
+	color: white;
+}
+.card2-icons a i {
+	font-size: 1.5rem;
+	margin: 0 1rem;
+}
+.card2:hover .card2-icons {
+	visibility: visible;
+	bottom: 4rem;
+}
+
+/* footer ------------------------------------------ */
+.footer{
+	width: 100%;
+	height: 22rem;
+	background-color: #222222;
+	display: flex;
+	padding: 2rem 2rem 0 2rem;
+	color: rgb(145, 144, 144);
+   margin-top: 4rem;
+}
+
+.column{
+	width: 25%;
+}
+
+.footer-tittle{
+	color: rgb(179, 179, 179);
+}
+
+.col2-box{
+	/* position: relative; */
+	height: 10rem;
+	padding: 0 1.5rem 0 0;
+	display: flex;
+	
+}
+
+.col2-text{
+	transform: translateY(-11px);
+	width: 80%;
+}
+
+.col2-box i{
+	margin-right: 1.5rem;
+	font-size: 3rem;
+}
+
+.red{
+	color: #FF432E
+}
+
+.col3 input{
+	width: 14rem;
+	height: 2rem;
+}
+
+.col3 button{
+	width: 6.9rem;
+	height: 2.4rem;
+	border: none;
+	outline: none;
+	background-color: #FF432E;
+	color: white;
+	letter-spacing: 2px;
+	border-radius: 2px;
+}
+
+.col4-box img{
+	width: 5rem;
+}
+/* footer 2 ------------------------------------------- */
+.footer2{
+	width: 100%;
+	height: 5rem;
+	background-color: #1D1D1D;
+	display: flex;
+	color: gray;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer2 p{
+	padding-left: 3rem;
+}
+
+.footer2 div{
+	padding-right: 5rem;
+}
+
+.footer2 div a{
+	text-decoration: none;
+	color: rgb(196, 196, 196);
+	margin: 0 1rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+   .top {
+		flex-direction: column;
+		height: 8rem;
+		padding-top: 1rem;
+	}
+
+	.top-left {
+		flex-direction: column;
+	}
+
+	.navbar {
+		flex-direction: column;
+		height: 35rem;
+	}
+
+	.navlinks {
+		flex-direction: column;
+		/* flex-wrap: wrap; */
+	}
+
+	.first{
+		font-size: 2rem;
+		line-height: 10rem;
+		padding-left:2rem;
+		margin-top: 2rem;
+		font-weight: 500;
+	}
+	
+   .about-us {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+   }
+
+   .first{
+      width: 100%;
+      font-size: 2.6rem;
+      background-size: cover;
+   }
+
+   .cards2 {
+		width: 90%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.card2 {
+		object-fit: cover;
+	}
+
+   .footer{
+		width: 100%;
+		height: 60rem;
+		padding: 2rem 2rem 0 2rem;
+		display: flex;
+		flex-direction: column;
+		margin-top: 30rem;
+	}
+	
+	.column{
+		width: 100%;
+	}
+
+	.footer2{
+		flex-direction: column;
+		height: 10rem;
+		justify-content: center;
+		align-items: center;
+	}
+}
